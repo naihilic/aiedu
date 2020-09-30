@@ -4,7 +4,7 @@ if($(IPython.toolbar.selector.concat(' > #AIedu')).length == 0) {
     'icon'    : 'fa fa-angle-double-down',
     'callback': function() {
   var cell=IPython.notebook.get_selected_cell();
-      cell.set_text('%matplotlib inline\nfrom aiedu.home import home\nhome.init()');
+      cell.set_text('%matplotlib inline\nfrom aiedu import home\nhome.init()');
       IPython.notebook.execute_cell(cell);
     }}], 'AIedu');}
 
@@ -15,7 +15,7 @@ function launch_first_cell (evt) {
       && IPython.notebook.kernel 
       && IPython.notebook.kernel.is_connected()
      ) {
-      var codeBlock = '%matplotlib inline\nfrom aiya.home import home\nhome.init()';
+      var codeBlock = '%matplotlib inline\nfrom aiedu import home\nhome.init()';
       //var cellTop=IPython.notebook.get_selected_cell();
       //var cellTop = IPython.notebook.insert_cell_above('code', 0);
       var cellTop = IPython.notebook.get_cells()[0];
