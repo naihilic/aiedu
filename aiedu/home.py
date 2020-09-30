@@ -13,7 +13,7 @@ questions = { 'q1': {'type': 'select', 'question': '바람이 패배한 이유�
 
 courseCurr = { 'title': 'NA',
                 'videos': ['Nxz6FxGH_6U','',''],
-                'summaries': ['a.html', 'b.html'],
+                'summaries': ['rc/a.html', 'rc/b.html'],
                 'questions': ['q1','q2','q3','q4'],
                 'references': ['r1.html', 'r2.html']
              }
