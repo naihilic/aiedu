@@ -1,0 +1,7 @@
+#!/bin/bash
+
+mkdir -p .jupyter/custom
+mv custom.js .jupyter/custom
+mv custom.css .jupyter/custom
+mv logo.png .jupyter/custom
+unzip aiya.zip
