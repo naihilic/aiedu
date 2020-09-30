@@ -5,6 +5,26 @@ from IPython.display import YouTubeVideo
 # a talk about IPython at Sage Days at U. Washington, Seattle.
 # Video credit: William Stein.
 
+courses = { "프로그래밍": {
+              "Python": {
+                "Python 기초": { "desc": "blah" },
+                "Python 실습": { "desc": "blah" },
+                "Python 고급": { "desc": "blah" }
+              },
+              "Java": {},
+              "C/C++": {},
+              "Go": {}
+            },
+            "인공지능": {
+            },
+            "데이터분석": {
+            },
+            "클라우드": {
+              "도커": {},
+              "Kubernetes": {}
+            }
+}
+
 questions = { 'q1': {'type': 'select', 'question': '바람이 패배한 이유는?', 'choices': ['노력', '전략', '계절', '확률']},
               'q2': {'type': 'select', 'question': '토끼가 간을 잃어버린 이유는?', 'choices': ['그런 일 없음', '실수', '건망증', '천재지변']},
               'q3': {'type': 'select', 'question': '임베딩을 하는 이유는?', 'choices': ['재밌음', '멋있음', '신기함', '학습에 도움이 됨']},
@@ -53,9 +73,9 @@ def init():
     [tab.set_title(i, title) for i, title in enumerate(titles)]
 
     with tab.children[0]:
-      topicsL1 = widgets.Select( options=['Linux', 'Windows', 'OSX'], value='OSX', description='', disabled=False) # rows=10,  
-      topicsL2 = widgets.Select( options=['Linux', 'Windows', 'OSX'], value='OSX', description='', disabled=False) # rows=10,  
-      topicsL3 = widgets.Select( options=['Linux', 'Windows', 'OSX'], value='OSX', description='', disabled=False) # rows=10,  
+      topicsL1 = widgets.Select( options=courses.key(), value=courses.keys()[0], description='', disabled=False) # rows=10,  
+      topicsL2 = widgets.Select( options=courses[cousrses.keys()[0]].keys(), value=courses[cousrses.keys()[0]].keys()[0], description='', disabled=False) # rows=10,  
+      topicsL3 = widgets.Select( options=['Foo', 'Bar', 'Blah'], value='Foo', description='', disabled=False) # rows=10,  
       display(HBox([VBox([Label(value='대분류'), topicsL1]),
                     VBox([Label(value='중분류'), topicsL2]),
                     VBox([Label(value='소분류'), topicsL3])]))
