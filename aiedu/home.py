@@ -73,8 +73,8 @@ def init():
     [tab.set_title(i, title) for i, title in enumerate(titles)]
 
     with tab.children[0]:
-      topicsL1 = widgets.Select( options=courses.keys(), value=courses.keys()[0], description='', disabled=False) # rows=10,  
-      topicsL2 = widgets.Select( options=courses[cousrses.keys()[0]].keys(), value=courses[cousrses.keys()[0]].keys()[0], description='', disabled=False) # rows=10,  
+      topicsL1 = widgets.Select( options=courses.keys(), value=list(courses.keys())[0], description='', disabled=False) # rows=10,  
+      topicsL2 = widgets.Select( options=courses[list(cousrses.keys())[0]].keys(), value=list(courses[list(cousrses.keys())[0]].keys())[0], description='', disabled=False) # rows=10,  
       topicsL3 = widgets.Select( options=['Foo', 'Bar', 'Blah'], value='Foo', description='', disabled=False) # rows=10,  
       display(HBox([VBox([Label(value='대분류'), topicsL1]),
                     VBox([Label(value='중분류'), topicsL2]),
