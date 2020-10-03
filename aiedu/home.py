@@ -116,6 +116,11 @@ def init():
       btnNext.on_click(on_test_clicked)
       display(VBox([outputContent,HBox([btnPrev, btnNext])]))
       #display(outputContent)
+    with tab.children[4]:
+      display(HTML(f'<h2>과정명: {courseCurr["title"]}</h2>'))
+      with open('rc/ref.html') as f:
+        strRef = f.read()
+        display(HTML(value=strRef))
 
     display(tab)
  
