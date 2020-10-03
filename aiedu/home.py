@@ -68,7 +68,7 @@ def init():
       display(courseCurr['outputDesc'])
     with tab.children[1]:
       #labelCourse = Label(value='과정명: '+courseCurr['title'])
-      display(HTML(f'과정명: {courseCurr['title']}'))
+      display(HTML(f'과정명: {courseCurr["title"]}'))
 
       outputVideos = [widgets.Output() for video in courseCurr['videos']]
       for idx, outputVideo in enumerate(outputVideos):
@@ -82,7 +82,7 @@ def init():
       #display(YouTubeVideo('Nxz6FxGH_6U'))
 
     with tab.children[2]:
-      display(HTML(f'과정명: {courseCurr['title']}'))
+      display(HTML(f'과정명: {courseCurr["title"]}'))
       #labelCourse = Label(value='과정명: '+courseCurr['title'])
       outputContent = widgets.Output()
       with outputContent:
@@ -99,7 +99,7 @@ def init():
 
     with tab.children[3]:
       #labelCourse = Label(value='과정명: '+courseCurr['title'])
-      display(HTML(f'과정명: {courseCurr['title']}'))
+      display(HTML(f'과정명: {courseCurr["title"]}'))
       outputContent = widgets.Output()
       with outputContent:
           display("[다음]버튼을 눌러서 시작해주세요.")
