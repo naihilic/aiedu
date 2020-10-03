@@ -15,6 +15,7 @@ courses = json.load(open("rc/courses.json"))
 courseCurr = courses['프로그래밍']['Python']['Python 기초'];
 
 def on_summary_clicked(b):
+    global courseCurr
     b.output.clear_output()
     with b.output:
         courseCurr['idxSummary'] = 0 if 'idxSummary' not in courseCurr.keys() else courseCurr['idxSummary']+(1 if b.action=='next' else -1)
@@ -26,6 +27,7 @@ def on_summary_clicked(b):
             display(HTML(value=strSummary))
 
 def on_test_clicked(b):
+    global courseCurr
     b.output.clear_output()
     courseCurr['questions'] = json.load(open(courseCurr['questionFile']))
     with b.output:
@@ -49,6 +51,7 @@ def on_topicL1_change(change):
           display(courseCurr['description'])
             
 def init():
+    global courseCurr
     tab = widgets.Tab(titles=['title:'+str(i) for i in range(len(titles))])
     tab.children = [widgets.Output() for title in titles]
     [tab.set_title(i, title) for i, title in enumerate(titles)]
