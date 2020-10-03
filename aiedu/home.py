@@ -60,7 +60,7 @@ def init():
       topicsL2 = widgets.Select( options=courses[list(courses.keys())[0]].keys(), value=list(courses[list(courses.keys())[0]].keys())[0], description='', disabled=False) # rows=10,  
       topicsL3 = widgets.Select( options=['Foo', 'Bar', 'Blah'], value='Foo', description='', disabled=False) # rows=10,
       with courseCurr['outputDesc']:
-          display(HTML("<h1>간단소개</h1>"))
+          display(HTML("<h2>간단소개</h2>"))
           display(courseCurr['description'])
       display(HBox([VBox([Label(value='대분류'), topicsL1]),
                     VBox([Label(value='중분류'), topicsL2]),
@@ -68,7 +68,7 @@ def init():
       display(courseCurr['outputDesc'])
     with tab.children[1]:
       #labelCourse = Label(value='과정명: '+courseCurr['title'])
-      display(HTML(f'과정명: {courseCurr["title"]}'))
+      display(HTML(f'<h2>과정명: {courseCurr["title"]}</h2>'))
 
       outputVideos = [widgets.Output() for video in courseCurr['videos']]
       for idx, outputVideo in enumerate(outputVideos):
@@ -82,7 +82,7 @@ def init():
       #display(YouTubeVideo('Nxz6FxGH_6U'))
 
     with tab.children[2]:
-      display(HTML(f'과정명: {courseCurr["title"]}'))
+      display(HTML(f'<h2>과정명: {courseCurr["title"]}</h2>'))
       #labelCourse = Label(value='과정명: '+courseCurr['title'])
       outputContent = widgets.Output()
       with outputContent:
@@ -99,7 +99,7 @@ def init():
 
     with tab.children[3]:
       #labelCourse = Label(value='과정명: '+courseCurr['title'])
-      display(HTML(f'과정명: {courseCurr["title"]}'))
+      display(HTML(f'<h2>과정명: {courseCurr["title"]}</h2>'))
       outputContent = widgets.Output()
       with outputContent:
           display("[다음]버튼을 눌러서 시작해주세요.")
