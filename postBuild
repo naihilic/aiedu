@@ -5,4 +5,4 @@ mv custom.js .jupyter/custom
 mv custom.css .jupyter/custom
 mv logo.png .jupyter/custom
 #mv jupyter_notebook_config.py .jupyter
-#mv jupyterhub_config.py .jupyter
+mv jupyterhub_config.py .jupyter
