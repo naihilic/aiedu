@@ -1,7 +1,7 @@
 #c.Spawner.args = ["--NotebookApp.tornado_settings={ 'headers': { 'Content-Security-Policy': 'frame-ancestors http://46d2446d1b0b.ngrok.io \'self\''} }"]  
 c.JupyterHub.tornado_settings = { 
   'headers': { 
-    'Content-Security-Policy': "frame-ancestors http://46d2446d1b0b.ngrok.io 'self'"
+    'Content-Security-Policy': "frame-ancestors http://ee3611620c23.ngrok.io 'self'"
   },
 #  'xsrf_cookie_kwargs': {'SameSite': "None", 'Secure': True},
   'cookie_options': {'samesite': "None", 'secure': True}
