@@ -1,6 +1,6 @@
 c.NotebookApp.tornado_settings = {
     'headers': {
-        'Content-Security-Policy': "default-src http: ‘unsafe-inline’; connect-src http: wss: ; frame-ancestors http://584241c843db.ngrok.io 'self' "
+        'Content-Security-Policy': "frame-ancestors http://584241c843db.ngrok.io 'self'; default-src http: ‘unsafe-inline’; connect-src http: wss: "
     }
 }
 
