@@ -1,5 +1,5 @@
 #!/bin/bash
-
+apt-get install -y python3.8
 mkdir -p .jupyter/custom
 mv custom.js .jupyter/custom
 mv custom.css .jupyter/custom
