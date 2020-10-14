@@ -7,7 +7,7 @@ c.NotebookApp.tornado_settings = {
 }
 c.NotebookApp.disable_check_xsrfBool = True
 #c.NotebookApp.tornado_settings = {"cookie_options": {"SameSite": "None", "Secure": True}}
-#c.NotebookApp.disable_check_xsrf = True
+c.NotebookApp.disable_check_xsrf = True
 
 #c.NotebookApp.tornado_settings = {
 #    'headers': {
