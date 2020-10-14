@@ -4,5 +4,6 @@ c.JupyterHub.tornado_settings = {
     'Content-Security-Policy': "frame-ancestors http://46d2446d1b0b.ngrok.io 'self'",
     "cookie_options": {"SameSite": "None", "Secure": True}
   } 
-} 
+}
+c.JupyterHub.disable_check_xsrf = True
 #c.JupyterHub.tornado_settings = {"cookie_options": {"SameSite": "None", "Secure": True}}
