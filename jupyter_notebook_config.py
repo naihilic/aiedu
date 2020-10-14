@@ -1,8 +1,8 @@
 c.NotebookApp.tornado_settings = {
     'headers': {
-        'Content-Security-Policy': "frame-ancestors http://46d2446d1b0b.ngrok.io 'self'",
-        "cookie_options": {"SameSite": "None", "Secure": True}
-    }
+        'Content-Security-Policy': "frame-ancestors http://46d2446d1b0b.ngrok.io 'self'"
+    },
+    'cookie_options': {'SameSite': "None", 'Secure': True}
 }
 #c.NotebookApp.tornado_settings = {"cookie_options": {"SameSite": "None", "Secure": True}}
 c.NotebookApp.disable_check_xsrf = True
