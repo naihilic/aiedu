@@ -3,3 +3,4 @@ ipywidgets==7.5.1
 #ludwig==0.2.2.8
 seaborn==0.10.0
 matplotlib==3.2.1
+ipyparams==0.2.1
